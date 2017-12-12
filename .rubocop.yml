@@ -1,0 +1,9 @@
+---
+AllCops:
+  DisplayCopNames: yes
+Metrics:
+  Enabled: no
+Rails:
+  Enabled: no
+Style/Documentation:
+  Enabled: no
