@@ -8,4 +8,5 @@ end
 
 gem 'concurrent-ruby', require: 'concurrent'
 gem 'overcommit', require: false
+gem 'pry'
 gem 'rubocop'
