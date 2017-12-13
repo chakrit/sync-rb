@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'bundler/setup'
-require 'concurrent'
+require './helpers'
 
 class Balance
   def initialize(amount)
@@ -23,26 +22,23 @@ class Balance
   end
 end
 
-def experiment
+experiment do
   balance = Balance.new(1000)
 
-  omise = Thread.new do
+  creditor = Thread.new do
     1000.times do
       balance.credit(100)
     end
   end
 
-  employee = Thread.new do
+  debtor = Thread.new do
     1000.times do
       balance.debit(100)
     end
   end
 
-  omise.join
-  employee.join
-  puts "final amount: #{balance.amount}"
-end
+  creditor.join
+  debtor.join
 
-20.times do
-  experiment
+  puts "final amount: #{balance.amount}"
 end
