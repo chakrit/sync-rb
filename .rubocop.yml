@@ -7,3 +7,5 @@ Rails:
   Enabled: no
 Style/Documentation:
   Enabled: no
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: no

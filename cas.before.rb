@@ -5,8 +5,8 @@ require './helpers'
 class Balance
   attr_accessor :amount
 
-  def initialize(amount)
-    @amount = amount
+  def initialize(_amount)
+    @amount = 0
   end
 
   def credit(delta)
