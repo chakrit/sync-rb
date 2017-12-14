@@ -1,4 +1,7 @@
+
 * Reader/Writer Lock
-* Memory Barrier
+* Event Signaling
 * Future/Promises
-* Lock-Free Synchronized Data Structures
+
+* Memory Barrier
+* Lock-Free Data Structures
